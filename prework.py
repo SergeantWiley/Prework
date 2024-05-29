@@ -1,7 +1,8 @@
 #Question 1
 def hello_name(user_name):
-    print(user_name)
-hello_name("Corporal Rat")
+    user_name = "Hello, " + user_name
+    return user_name
+print(hello_name("Corporal Rat"))
 #Question 2
 def first_odds():
     for i in range(1,101,2):
@@ -9,18 +10,18 @@ def first_odds():
 first_odds()
 # Question 3
 def max_num_in_list(a_list):
-    print(max(a_list))
-max_num_in_list([1,2,3,5,8,13,21,34,55,89])
+    return max(a_list)
+print(max_num_in_list([1,2,3,5,8,13,21,34,55,89]))
 # Question 4
 def is_leap_year(a_year):
     if a_year % 4 == 0:
         if  a_year % 100 != 0 or a_year % 400 == 0:
-            print("Is leap year")
+            return "Is leap year"
         else:
-            print("is not leap year")
+            return "is not leap year"
     else:
-        print("is not leap year")
-is_leap_year(2023)  
+        return "is not leap year"
+print(is_leap_year(2023))  
 #Question 5
 def is_consecutive(a_list):
     real_sum = sum(a_list)
